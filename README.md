@@ -1,5 +1,13 @@
 # jmeter-load-test
 
+## Scripts
+
+```
+/test-plans
+  /automation-practice - Em desenvolvimento
+  /blaze-demo - Concluído e em evolução 
+```
+
 ## Inspirações
 
 - https://hub.docker.com/r/vmarrazzo/jmeter
