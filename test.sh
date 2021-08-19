@@ -1,10 +1,7 @@
 #!/bin/bash
-#
-# Test the JMeter Docker image using a trivial test plan.
 
 T_DIR=test-plans/blaze-demo
 
-# Reporting dir: start fresh
 R_DIR=${T_DIR}/report
 rm -rf ${R_DIR} >/dev/null 2>&1
 mkdir -p ${R_DIR}
