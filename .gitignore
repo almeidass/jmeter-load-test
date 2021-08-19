@@ -20,6 +20,6 @@ user.properties
 !.gitkeep
 
 # Blacklist
+**/report
 results
-recording.xml
 .DS_Store
