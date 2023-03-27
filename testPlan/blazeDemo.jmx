@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.1">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -64,14 +64,14 @@
                 <elementProp name="fromPort" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">fromPort</stringProp>
-                  <stringProp name="Argument.value">${cidadeOrigem}</stringProp>
+                  <stringProp name="Argument.value">${departureCity}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="toPort" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">toPort</stringProp>
-                  <stringProp name="Argument.value">${cidadeDestino}</stringProp>
+                  <stringProp name="Argument.value">${destinationCity}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -143,35 +143,35 @@
                 <elementProp name="flight" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">flight</stringProp>
-                  <stringProp name="Argument.value">${numVoo}</stringProp>
+                  <stringProp name="Argument.value">${flight}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="price" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">price</stringProp>
-                  <stringProp name="Argument.value">${precoVoo}</stringProp>
+                  <stringProp name="Argument.value">${price}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="airline" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">airline</stringProp>
-                  <stringProp name="Argument.value">${companhiaAerea}</stringProp>
+                  <stringProp name="Argument.value">${airLine}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="fromPort" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">fromPort</stringProp>
-                  <stringProp name="Argument.value">${cidadeOrigem}</stringProp>
+                  <stringProp name="Argument.value">${departureCity}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="toPort" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">toPort</stringProp>
-                  <stringProp name="Argument.value">${cidadeDestino}</stringProp>
+                  <stringProp name="Argument.value">${destinationCity}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -250,70 +250,70 @@
                 <elementProp name="inputName" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">inputName</stringProp>
-                  <stringProp name="Argument.value">${nomeCliente}</stringProp>
+                  <stringProp name="Argument.value">${client}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="address" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">address</stringProp>
-                  <stringProp name="Argument.value">${enderecoCliente}</stringProp>
+                  <stringProp name="Argument.value">${address}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="city" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">city</stringProp>
-                  <stringProp name="Argument.value">${cidadeCliente}</stringProp>
+                  <stringProp name="Argument.value">${city}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="state" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">state</stringProp>
-                  <stringProp name="Argument.value">${estadoCliente}</stringProp>
+                  <stringProp name="Argument.value">${state}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="zipCode" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">zipCode</stringProp>
-                  <stringProp name="Argument.value">${cepCliente}</stringProp>
+                  <stringProp name="Argument.value">${zipCode}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="cardType" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">cardType</stringProp>
-                  <stringProp name="Argument.value">${bandeiraCartao}</stringProp>
+                  <stringProp name="Argument.value">${cardType}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="creditCardNumber" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">creditCardNumber</stringProp>
-                  <stringProp name="Argument.value">${numCartao}</stringProp>
+                  <stringProp name="Argument.value">${creditCardNumber}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="creditCardMonth" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">creditCardMonth</stringProp>
-                  <stringProp name="Argument.value">${mesCartao}</stringProp>
+                  <stringProp name="Argument.value">${creditCardMonth}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="creditCardYear" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">creditCardYear</stringProp>
-                  <stringProp name="Argument.value">${anoCartao}</stringProp>
+                  <stringProp name="Argument.value">${creditCardYear}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="nameOnCard" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">nameOnCard</stringProp>
-                  <stringProp name="Argument.value">${nomeCliente}</stringProp>
+                  <stringProp name="Argument.value">${client}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -417,7 +417,6 @@
         <stringProp name="HTTPSampler.protocol">${scheme}</stringProp>
         <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
         <stringProp name="HTTPSampler.path"></stringProp>
-        <stringProp name="TestPlan.comments">protocol</stringProp>
         <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
         <stringProp name="HTTPSampler.connect_timeout"></stringProp>
         <stringProp name="HTTPSampler.response_timeout"></stringProp>
@@ -462,24 +461,28 @@
       <hashTree/>
       <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="[HTTPCM] - Geral" enabled="true">
         <collectionProp name="CookieManager.cookies"/>
-        <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
-      <com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup guiclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroupGui" testclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup" testname="bzm - Concurrency Thread Group" enabled="true">
-        <elementProp name="ThreadGroup.main_controller" elementType="com.blazemeter.jmeter.control.VirtualUserController"/>
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <stringProp name="TargetLevel">${__P(numThreads, 20)}</stringProp>
-        <stringProp name="RampUp">${__P(rampUp, 10)}</stringProp>
-        <stringProp name="Steps">${__P(rampUpSteps, 2)}</stringProp>
-        <stringProp name="Hold">${__P(durationSec, 60)}</stringProp>
-        <stringProp name="LogFilename"></stringProp>
-        <stringProp name="Iterations"></stringProp>
-        <stringProp name="Unit">S</stringProp>
-      </com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${__P(numThreads, 1)}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${__P(rampUp, 1)}</stringProp>
+        <longProp name="ThreadGroup.start_time">1370726934000</longProp>
+        <longProp name="ThreadGroup.end_time">1370726934000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(durationSec, 60)}</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
       <hashTree>
-        <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="[RCSV] - Cidade Origem" enabled="true">
-          <stringProp name="filename">massa-cidade-origem.csv</stringProp>
+        <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="[CSV] - Departure City" enabled="true">
+          <stringProp name="filename">departureCity.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="variableNames"></stringProp>
@@ -489,8 +492,8 @@
           <boolProp name="independentListPerThread">false</boolProp>
         </com.blazemeter.jmeter.RandomCSVDataSetConfig>
         <hashTree/>
-        <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="[RCSV] - Cidade Destino" enabled="true">
-          <stringProp name="filename">massa-cidade-destino.csv</stringProp>
+        <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="[CSV] - Destination City" enabled="true">
+          <stringProp name="filename">destinationCity.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="variableNames"></stringProp>
@@ -500,8 +503,8 @@
           <boolProp name="independentListPerThread">false</boolProp>
         </com.blazemeter.jmeter.RandomCSVDataSetConfig>
         <hashTree/>
-        <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="[RCSV] - Voo" enabled="true">
-          <stringProp name="filename">massa-voo.csv</stringProp>
+        <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="[CSV] - Flight" enabled="true">
+          <stringProp name="filename">flights.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="variableNames"></stringProp>
@@ -511,8 +514,8 @@
           <boolProp name="independentListPerThread">false</boolProp>
         </com.blazemeter.jmeter.RandomCSVDataSetConfig>
         <hashTree/>
-        <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="[RCSV] - Cliente" enabled="true">
-          <stringProp name="filename">massa-cliente.csv</stringProp>
+        <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="[CSV] - Customers" enabled="true">
+          <stringProp name="filename">customers.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="variableNames"></stringProp>
@@ -522,8 +525,8 @@
           <boolProp name="independentListPerThread">false</boolProp>
         </com.blazemeter.jmeter.RandomCSVDataSetConfig>
         <hashTree/>
-        <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="[RCSV] - Cartao Credito" enabled="true">
-          <stringProp name="filename">massa-cartao-credito.csv</stringProp>
+        <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="[CSV] - Credit Card" enabled="true">
+          <stringProp name="filename">creditCard.csv</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="variableNames"></stringProp>
@@ -533,131 +536,44 @@
           <boolProp name="independentListPerThread">false</boolProp>
         </com.blazemeter.jmeter.RandomCSVDataSetConfig>
         <hashTree/>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="[TPC] - Pesquisar Voo - 70%" enabled="true">
-          <intProp name="ThroughputController.style">1</intProp>
-          <boolProp name="ThroughputController.perThread">false</boolProp>
-          <intProp name="ThroughputController.maxThroughput">1</intProp>
-          <FloatProperty>
-            <name>ThroughputController.percentThroughput</name>
-            <value>70.0</value>
-            <savedValue>0.0</savedValue>
-          </FloatProperty>
-        </ThroughputController>
-        <hashTree>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="[MC] - Acessar Home" enabled="true">
-            <collectionProp name="ModuleController.node_path">
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="170071582">Test Fragment</stringProp>
-              <stringProp name="-1557179060">[SC] - Acessar Home</stringProp>
-            </collectionProp>
-          </ModuleController>
-          <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="[MC] - Pesquisar Voos" enabled="true">
-            <collectionProp name="ModuleController.node_path">
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="170071582">Test Fragment</stringProp>
-              <stringProp name="-1812574175">[SC] - Pesquisar Voos</stringProp>
-            </collectionProp>
-          </ModuleController>
-          <hashTree/>
-        </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="[TPC] - Escolher Voo - 20%" enabled="true">
-          <intProp name="ThroughputController.style">1</intProp>
-          <boolProp name="ThroughputController.perThread">false</boolProp>
-          <intProp name="ThroughputController.maxThroughput">1</intProp>
-          <FloatProperty>
-            <name>ThroughputController.percentThroughput</name>
-            <value>20.0</value>
-            <savedValue>0.0</savedValue>
-          </FloatProperty>
-        </ThroughputController>
-        <hashTree>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="[MC] - Acessar Home" enabled="true">
-            <collectionProp name="ModuleController.node_path">
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="170071582">Test Fragment</stringProp>
-              <stringProp name="-1557179060">[SC] - Acessar Home</stringProp>
-            </collectionProp>
-          </ModuleController>
-          <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="[MC] - Pesquisar Voos" enabled="true">
-            <collectionProp name="ModuleController.node_path">
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="170071582">Test Fragment</stringProp>
-              <stringProp name="-1812574175">[SC] - Pesquisar Voos</stringProp>
-            </collectionProp>
-          </ModuleController>
-          <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="[MC] - Escolher Voo" enabled="true">
-            <collectionProp name="ModuleController.node_path">
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="170071582">Test Fragment</stringProp>
-              <stringProp name="1610733594">[SC] - Escolher Voo</stringProp>
-            </collectionProp>
-          </ModuleController>
-          <hashTree/>
-        </hashTree>
-        <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="[TPC] - Fechar Pedido Cartao Credito - 10%" enabled="true">
-          <intProp name="ThroughputController.style">1</intProp>
-          <boolProp name="ThroughputController.perThread">false</boolProp>
-          <intProp name="ThroughputController.maxThroughput">1</intProp>
-          <FloatProperty>
-            <name>ThroughputController.percentThroughput</name>
-            <value>10.0</value>
-            <savedValue>0.0</savedValue>
-          </FloatProperty>
-        </ThroughputController>
-        <hashTree>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="[MC] - Acessar Home" enabled="true">
-            <collectionProp name="ModuleController.node_path">
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="170071582">Test Fragment</stringProp>
-              <stringProp name="-1557179060">[SC] - Acessar Home</stringProp>
-            </collectionProp>
-          </ModuleController>
-          <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="[MC] - Pesquisar Voos" enabled="true">
-            <collectionProp name="ModuleController.node_path">
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="170071582">Test Fragment</stringProp>
-              <stringProp name="-1812574175">[SC] - Pesquisar Voos</stringProp>
-            </collectionProp>
-          </ModuleController>
-          <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="[MC] - Escolher Voo" enabled="true">
-            <collectionProp name="ModuleController.node_path">
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="170071582">Test Fragment</stringProp>
-              <stringProp name="1610733594">[SC] - Escolher Voo</stringProp>
-            </collectionProp>
-          </ModuleController>
-          <hashTree/>
-          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="[MC] - Comprar Voo" enabled="true">
-            <collectionProp name="ModuleController.node_path">
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="764597751">Test Plan</stringProp>
-              <stringProp name="170071582">Test Fragment</stringProp>
-              <stringProp name="-2054975511">[SC] - Comprar Voo</stringProp>
-            </collectionProp>
-          </ModuleController>
-          <hashTree/>
-        </hashTree>
-        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="[FCA]" enabled="true">
-          <intProp name="ActionProcessor.action">3</intProp>
-          <intProp name="ActionProcessor.target">0</intProp>
-          <stringProp name="ActionProcessor.duration">0</stringProp>
-        </TestAction>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="[MC] - Acessar Home" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="170071582">Test Fragment</stringProp>
+            <stringProp name="-1557179060">[SC] - Acessar Home</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="[MC] - Pesquisar Voos" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="170071582">Test Fragment</stringProp>
+            <stringProp name="-1812574175">[SC] - Pesquisar Voos</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="[MC] - Escolher Voo" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="170071582">Test Fragment</stringProp>
+            <stringProp name="1610733594">[SC] - Escolher Voo</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="[MC] - Comprar Voo" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="170071582">Test Fragment</stringProp>
+            <stringProp name="-2054975511">[SC] - Comprar Voo</stringProp>
+          </collectionProp>
+        </ModuleController>
         <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
-          <boolProp name="ResultCollector.error_logging">true</boolProp>
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
             <value class="SampleSaveConfiguration">
@@ -688,7 +604,7 @@
               <sampleCount>true</sampleCount>
             </value>
           </objProp>
-          <stringProp name="filename">result.xml</stringProp>
+          <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">

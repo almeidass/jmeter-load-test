@@ -1,4 +1,4 @@
-bandeiraCartao,numCartao,mesCartao,anoCartao,cvv
+cardType,creditCardNumber,creditCardMonth,creditCardYear,cvv
 visa,4485805646097681,07,2022,211
 visa,4024007106924409,05,2022,994
 visa,4539488214839648,02,2023,532

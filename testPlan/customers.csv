@@ -1,4 +1,4 @@
-nomeCliente,enderecoCliente,cidadeCliente,estadoCliente,cepCliente
+client,address,city,state,zipCode
 Daiane Freitas,Rua Dolores Duran N 483,Campo Grande,MS,79063330
 Helena Peixoto,Travessa Paraná N 494,Santarém,PA,68035550
 Thomas Pires,Quadra 3C Conjunto A N 424,Brasília,DF,73368250
